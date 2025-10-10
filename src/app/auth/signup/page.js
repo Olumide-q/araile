@@ -20,6 +20,7 @@ export default function SignUp() {
 
   const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [formError, setFormError] = useState(null);
 
@@ -27,6 +28,9 @@ export default function SignUp() {
     setShowPassword(!showPassword);
   };
 
+  const handleToggleConfirmPassword = () => {
+    setShowConfirmPassword(!showConfirmPassword);
+  };
   const onSubmit = async (data) => {
     console.log(data);
     setLoading(true);
@@ -127,11 +131,9 @@ export default function SignUp() {
 
           <div className="relative">
             <input
-              type={showPassword ? "text" : "password"}
+              type={showConfirmPassword ? "text" : "password"}
               placeholder="confirmPassword"
-              className={`w-full pl-[21px] text-center lg:text-left rounded-[9px] shadow focus:outline-none py-[19px] ${
-                errors.password2 ? "border-red-500" : "border-[#9DC1FB]"
-              }`}
+              className={`w-full pl-[21px] text-center lg:text-left rounded-[9px] shadow focus:outline-none py-[19px] ${errors.password2 ? "border-red-500" : "border-[#9DC1FB]"}`}
               {...register("password2", {
                 required: "Please confirm your password",
                 validate: (value) =>
@@ -141,9 +143,9 @@ export default function SignUp() {
             <button
               type="button"
               className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full"
-              onClick={handleTogglePassword}
+              onClick={handleToggleConfirmPassword}
             >
-              {showPassword ? <MdOutlineRemoveRedEye /> : <FaRegEyeSlash />}
+              {showConfirmPassword ? <MdOutlineRemoveRedEye /> : <FaRegEyeSlash />}
             </button>
           </div>
           {errors.password2 && (

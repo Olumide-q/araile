@@ -8,15 +8,60 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.hero{
+   background-image: url("../images/Frame 67.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* width: '100%'; */
+  /* height: 100%; */
+  padding: 8rem 3rem 8rem 3rem;
+}
 
 
+@media (width > 768px) {
+  .hero {
+  background-image: url("../images/Frame\ 9\ \(1\).svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+    width: '100%';
+    /* padding-top: 15rem; */
+  }
+  
+}
+.fontFamily500 {
+  font-family: '../assests/vonca-medium.otf';
+  font-weight: 600;
+  font-size:x larger;
+}
+
+.fontFamily600 {
+  /* font-family: '../assests/vonca-extrabold.otf';
+  font-weight: 400;
+  font-size:x larger; */
+  font-family: 'Vonca', sans-serif;
+}
+
+.fontFamily400 {
+  font-family: 'Vonca', sans-serif;
+  /* font-weight: 300; */
+  /* font-size:x larger; */
+}
 
 
+/* @font-face{
+  font-family: 'Vonca';
+  src: url('../assets/font/vonca-semibold.otf');
+  font-weight: '600';
+  font-style: normal;
+} */
 
-
-
-
-
+@font-face{
+  font-family: 'Vonca';
+  src: url('../assets/font/Vonca-Semibold.woff');
+  font-weight: '600';
+  font-style: normal;
+}
 
 /* :root {
   --background: #ffffff;

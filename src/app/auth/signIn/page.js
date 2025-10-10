@@ -100,7 +100,9 @@ import { useState } from 'react';
 import { useRouter } from "next/navigation";
 import { useForm } from 'react-hook-form';
 import Link from "next/link";
-import ForgetPassword from '@/component/modals/newPassword';
+import { Truculenta } from 'next/font/google';
+import ResetPasswordModal from '@/component/modals/newPassword';
+
 
 export default function SignIn() {
     const {
@@ -110,6 +112,7 @@ export default function SignIn() {
         formState: {errors}
     } = useForm();
     const router = useRouter();
+    const [showModal, setShowModal] = useState(false);
     const [loading, setLoading] = useState(false);
     const [formError, setFormError] = useState(null);
     const [showPassword, setShowPassword] = useState(false);
@@ -158,7 +161,7 @@ export default function SignIn() {
     
     return(
         <div className='body'>
-            <div className="w-full lg:w-[35%] mx-auto flex flex-col gap-[20px] lg:gap-[42px] lg:py-[18%] py-[50%] px-10">
+            <div className="h-screen w-full lg:w-[35%] mx-auto flex flex-col gap-[20px] lg:gap-[42px] lg:py-[18%] py-[50%] px-10">
                 <div>
                     <p className="text-center text-[32px] font-extralight lg:font-bold">Welcome Back</p>
                 </div>
@@ -209,14 +212,17 @@ export default function SignIn() {
                   </div>
                   {errors.password && <p className='text-red-500 text-left'>{errors.password.message}</p>}
 
-                  <div className='flex gap-4 flex-row justify-between text-center'>
+                  <div className='flex flex-row items-center justify-between text-center'>
                     <label className='flex flex-row gap-2 text-center text-[#1A1A1A66] text-sm' htmlFor="remember">
                       <input type="checkbox" id="remember" {...register("remember")} />
                       Remember me
                     </label>
-                   <button>
-                    <ForgetPassword/>
-                   </button>
+                      <div>
+                          <button onClick={() => setShowModal(true)} className="text-sm text-[#1A1A1A66] hover:text-blue-500">
+                            Forgot password?
+                          </button>
+                         <ResetPasswordModal  isOpen={showModal} onClose={() => setShowModal(false)}/>
+                      </div>
                   </div>
                   
                   <button 
