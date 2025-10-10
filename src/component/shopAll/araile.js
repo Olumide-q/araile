@@ -198,11 +198,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import Image from "next/image";
-import shop from "../../icons/Shop all ARÁILÉ.svg";
+// import shop from "../../icons/Shop all ARÁILÉ.svg";
 import { baseUrl } from "@/constant/const";
-import img from '../../images/Frame 23 (2).svg'
+import img from '../../../public/images/Frame 23 (2).svg'
 
 
 export default function Products() {

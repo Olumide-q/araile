@@ -99,8 +99,8 @@ import { FaRegEyeSlash } from 'react-icons/fa6';
 import { useState } from 'react';
 import { useRouter } from "next/navigation";
 import { useForm } from 'react-hook-form';
-import Link from "next/link";
-import { Truculenta } from 'next/font/google';
+// import Link from "next/link";
+// import { Truculenta } from 'next/font/google';
 import ResetPasswordModal from '@/component/modals/newPassword';
 
 

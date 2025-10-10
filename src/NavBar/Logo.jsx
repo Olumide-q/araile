@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../icons/ARÁILÉ (1).svg';
+import logo from '../../public/icons/ARÁILÉ (1).svg'
 import Link from 'next/link'
 import Image from 'next/image'
 

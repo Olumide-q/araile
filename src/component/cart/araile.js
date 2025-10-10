@@ -1,10 +1,10 @@
 'use client'
 import { useState, useEffect } from 'react';
 import Image from "next/image"
-import img from '../../images/Frame 23.svg'
-import img1 from '../../images/Frame 24 (2).svg'
-import img2 from '../../images/Frame 23 (2).svg'
-import img3 from '../../images/Frame 24 (1).svg'
+import img from '../../../public/images/Frame 23.svg'
+import img1 from '../../../public/images/Frame 24 (2).svg'
+import img2 from '../../../public/images/Frame 23 (2).svg'
+import img3 from '../../../public/images/Frame 24 (1).svg'
 import { RiSubtractFill } from "react-icons/ri";
 import { IoMdAdd } from "react-icons/io";
 

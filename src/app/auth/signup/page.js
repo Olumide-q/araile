@@ -7,7 +7,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
-import { getRenderResumeDataCache } from "next/dist/server/app-render/work-unit-async-storage.external";
+// import { getRenderResumeDataCache } from "next/dist/server/app-render/work-unit-async-storage.external";
 
 export default function SignUp() {
   const {

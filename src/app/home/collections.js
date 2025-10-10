@@ -1,7 +1,7 @@
 import Image from "next/image"
-import frame1 from '../../images/Frame 24.svg'
-import frame2 from '../../images/Frame 23.svg'
-import frame3 from '../../images/Frame 23 (1).svg'
+import frame1 from '../../../public/images/Frame 24.svg'
+import frame2 from '../../../public/images/Frame 23.svg'
+import frame3 from '../../../public/images/Frame 23 (1).svg'
 // import icon from '../../icons/image 1 (6).svg'
 // import icon1 from '../../icons/Frame 27.svg'
 // import icon2 from '../../icons/Frame 27 (1).svg'
