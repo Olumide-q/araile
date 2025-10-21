@@ -1,17 +1,16 @@
 'use client'
 import { useState, useEffect } from 'react';
 import Image from "next/image"
-import img from '../../images/frame-23-1.svg'
-import img1 from '../../images/frame-24-2.svg'
-import img2 from '../../images/frame-23-2.svg'
-import img3 from '../../images/frame-24-1.svg'
+import img from '../../../public/images/frame-23-1.svg'
+import img1 from '../../../public/images/frame-24-2.svg'
+import img2 from '../../../public/images/frame-23-2.svg'
+import img3 from '../../../public/images/frame-24-1.svg'
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { RiSubtractFill } from "react-icons/ri";
 import { IoMdAdd } from "react-icons/io";
 import { baseUrl } from "@/constant/const";
 import Link from "next/link";
 import 'animate.css';
-
 export default function Araile() {
     const [selectedSize, setSelectedSize] = useState('');
     const [quantity, setQuantity] = useState(1);
