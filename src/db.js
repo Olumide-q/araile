@@ -1,11 +1,11 @@
 import Image from "next/image"
-import img1 from './../public/images/Frame 23 (2).svg'
-import img2 from './../public/images/Frame 23.svg'
-import img3 from "./../public/images/Frame 24 (1).svg"
-import img4 from "./../public/images/Frame 24 (2).svg"
-import img5 from './../public/images/Frame 24.svg'
-import fig from './../public/images/Frame 28.svg'
-import icn from './../public/icons/Frame 27 (3).svg'
+import img1 from '/public/images/frame-23-2.svg'
+import img2 from '/public/images/frame-23.svg'
+import img3 from '/public/images/frame-24-1.svg'
+import img4 from '/public/images/frame-24-2.svg'
+import img5 from '/public/images/frame-24.svg'
+import fig from '/public/images/frame-28.svg'
+import icn from '/public/icons/frame-27-3.svg'
 
 export const ShopAllAraile = [
     {

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import logo from '../../public/icons/ARÁILÉ (1).svg'
+import logo from '/public/icons/araile-1.svg'
 import icon from '../../public/icons/image 1 (6).svg'
 // import img from '../../images/Frame 9 (1).svg'
 // import img1 from '../../images/Frame 67.svg'

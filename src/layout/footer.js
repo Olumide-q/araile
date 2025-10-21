@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import logo from '../../public/icons/ARÁILÉ (2).svg'
+import logo from '/public/icons/araile-2.svg'
 import { FaTiktok } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { PiInstagramLogoLight } from "react-icons/pi";

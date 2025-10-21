@@ -1,6 +1,6 @@
 // "use client"
 import Image from "next/image";
-import logo from '../../../public/icons/ARÁILÉ (1).svg';
+import logo from '/public/icons/araile-1.svg'
 import Link from "next/link";
 
 export default function Logo() {

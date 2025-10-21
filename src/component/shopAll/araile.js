@@ -202,8 +202,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 // import shop from "../../icons/Shop all ARÁILÉ.svg";
 import { baseUrl } from "@/constant/const";
-import img from '../../../public/images/Frame 23 (2).svg'
-
+import img from '/public/images/frame-23-2.svg'
 
 export default function Products() {
   const [products, setProducts] = useState([]);
