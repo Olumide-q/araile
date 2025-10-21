@@ -1,7 +1,7 @@
 import Image from "next/image"
-import frame1 from '/public/images/frame-24.svg'
-import frame2 from '/public/images/frame-23.svg'
-import frame3 from '/public/images/frame-23-1.svg'
+import frame1 from '/public/images/frame-24-1.svg'
+import frame2 from '/public/images/frame-23-1.svg'
+import frame3 from '/public/images/frame-23-2.svg'
 export default function Collection() {
     return(
         <div className="w-full ">
@@ -19,14 +19,14 @@ export default function Collection() {
                             </div>
             </div>
                 <div className="relative group cursor-pointer overflow-hidden rounded-lg">
-                    <Image className="w-full cursor-pointer transition-transform duration-500 ease-out group-hover:scale-110 "  alt="vector" src={frame2} />
+                    <Image className="w-full cursor-pointer transition-transform duration-500 ease-out group-hover:scale-110 "  alt="vector" src={frame3} />
                             <div className="absolute bottom-8 right-8 text-right">
                                             <p className="fontFamily600 text-[32px] font-bold text-white border px-[10px] uppercase">ARÁILÉ DRESS</p>
                                             </div>
                             </div>
                 </div>
                 <div className="relative group cursor-pointer overflow-hidden rounded-lg">
-                <Image className="w-full cursor-pointer transition-transform duration-500 ease-out group-hover:scale-110  "  alt="vector" src={frame3} />
+                <Image className="w-full cursor-pointer transition-transform duration-500 ease-out group-hover:scale-110  "  alt="vector" src={frame2} />
         <div className="absolute bottom-8 right-8 text-right">
                                             <p className="fontFamily600 lg:text-[32px] font-bold text-white border px-[10px] uppercase">ARÁILÉ VEST SET</p>
                                             </div>
