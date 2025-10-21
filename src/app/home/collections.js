@@ -1,14 +1,15 @@
 import Image from "next/image"
-import frame1 from '/public/images/frame-24-1.svg'
-import frame2 from '/public/images/frame-23-1.svg'
-import frame3 from '/public/images/frame-23-2.svg'
+import frame1 from '../../../public/images/frame-24-1.svg'
+import frame2 from '../../../public/images/frame-23-1.svg'
+import frame3 from '../../../public/images/frame-23-2.svg'
+
 export default function Collection() {
     return(
         <div className="w-full ">
            <div className="w-11/12 container mx-auto pb-10 ">
            <div className="bg-white text-[#212638] lg:w-[35%] mx-auto text-center pt-[67px] pb-[50px] ">
              <p className="fontFamily400 text-[32px]">ARÁILÉ COLLECTIONS</p>
-            <p className="lg:text-[18px] text-[16px] font-extralight">I feel that I’ve reached a point in my career where I’m looking for new challenges that can push me to grow further as a product.</p>
+            <p className="lg:text-[18px] text-[16px] font-extralight">I feel that I've reached a point in my career where I'm looking for new challenges that can push me to grow further as a product.</p>
             </div>
             <div className=" w-full flex flex-col gap-[27px]  ">
                 <div className="grid lg:grid-cols-2 gap-[27px] ">
